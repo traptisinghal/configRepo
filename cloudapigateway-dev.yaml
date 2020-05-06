@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: ConvertCurrencyApp
+        uri: lb://ConvertCurrencyApp
+        predicates:
+        - Path=/currency/conversionfactor/**
