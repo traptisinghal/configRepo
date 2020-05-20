@@ -6,3 +6,6 @@ spring:
         uri: lb://authserver
         predicates:
         - Path=/authenticate
+        - Path=/product
+        - Path=/cart
+        - Path=/order
