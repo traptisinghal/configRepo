@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: authserver
+        uri: lb://authserver
+        predicates:
+        - Path=/authenticate
