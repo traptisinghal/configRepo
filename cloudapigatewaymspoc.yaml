@@ -10,4 +10,12 @@ spring:
         uri: lb://productmspoc
         predicates:
         - Path=/product
+      - id: cartmspoc
+        uri: lb://cartmspoc
+        predicates:
+        - Path=/cart
+      - id: ordermspoc
+        uri: lb://ordermspoc
+        predicates:
+        - Path=/order
       
