@@ -9,11 +9,11 @@ spring:
       - id: productmspoc
         uri: lb://productmspoc
         predicates:
-        - Path=/product
+        - Path=/product/**
       - id: cartmspoc
         uri: lb://cartmspoc
         predicates:
-        - Path=/cart
+        - Path=/cart/**
       - id: ordermspoc
         uri: lb://ordermspoc
         predicates:
