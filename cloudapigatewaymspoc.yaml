@@ -18,4 +18,9 @@ spring:
         uri: lb://ordermspoc
         predicates:
         - Path=/order
+       - id: auditmspoc
+        uri: lb://auditmspoc
+        predicates:
+        - Path=/audit/**
+        
       
