@@ -21,6 +21,6 @@ spring:
       - id: auditmspoc
         uri: lb://auditmspoc
         predicates:
-        - Path=/audit/**
+        - Path=/audit/**,/h2
         
       
